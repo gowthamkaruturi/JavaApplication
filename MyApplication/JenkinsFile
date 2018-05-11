@@ -10,7 +10,7 @@ pipeline {
   stages{
     stage('build'){
     steps{
-        sh 'JavaApplication/MyApplication'
+        sh 'cd JavaApplication/MyApplication'
         sh 'mvn compile package'
         }
       }
