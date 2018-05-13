@@ -11,8 +11,8 @@ pipeline {
     stage('build'){
     steps{
         sh 'mvn -version \
-           cd MyApplication \
-            mvn compile package'
+           cd MyApplication '
+          sh 'mvn compile package'
         }
       }
     }
